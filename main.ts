@@ -14,7 +14,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Player, function (sprite, otherSprite) {
     sprite.destroy()
-    if (flower.y > sprite.y) {
+    if (Axxora.y < sprite.y) {
         info.changeScoreBy(3)
     } else {
         info.changeLifeBy(-1)
